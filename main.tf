@@ -104,7 +104,7 @@ resource "aws_instance" "app_instance"{
   key_name = "dilan-morar-eng48"
   user_data = data.template_file.app_init.rendered
   tags = {
-    Name = "${var.Name}-instance"
+    Name = "${var.Name}-nodejs"
   }
 }
 
